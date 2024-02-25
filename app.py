@@ -63,7 +63,7 @@ def create_test_case():
         return jsonify({"message": "Test case created"}),  201
     except Exception as e:
         db.session.rollback()
-        print(f"Exception occurred: {e}")  # This line will print the exception to the console
+        print(f"Exception occurred: {e}") 
         return jsonify({"error": "An error occurred while creating the test case"}),  500
 
 
